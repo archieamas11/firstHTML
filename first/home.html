@@ -4,21 +4,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>my first html</title>
+  <title>My First HTML</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
 <body>
-  <div class="top">
-    <nav>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT ME</a></li>
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio.</a></div>
+      <ul class="menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#">SOCIALS</a></li>
       </ul>
-    </nav>
-    <div class="hero">
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="home" id="home">
       <h1>Hello!, I'm Archie <span>Albarico</span></h1>
       <p>This is my first sample website I made</p>
 
@@ -28,12 +33,32 @@
         <a href="https://x.com/ar_chieQT"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/archieamas11"><i class="fab fa-github"></i></a>
       </div>
-    </div>
-    <div class="images">
-      <img src="images/shape.png" class="shape" />
-      <img src="images/myself.png" class="me" />
-    </div>
-  </div>
+    </section>
+
+    <section class="images">
+      <img src="images/shape.png" alt="Shape Image" />
+      <img src="images/myself.png" alt="Myself Image" />
+    </section>
+
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title">About Me</div>
+        <div class="about-details">
+          <div class="left">
+            <img decoding="async" src="images/about.jpg" alt="Portfolio">
+          </div>
+          <div class="right">
+            <div class="topic">Designing Is My Passion</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.</p>
+            <div class="button">
+              <button>Download CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 </body>
 
 </html>
