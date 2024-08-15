@@ -10,71 +10,67 @@
 }
 
 .navbar {
+    margin: 25px auto;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0 50px;
+    border: solid;
+}
+
+.navdiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    border: solid;
+    border-color: red;
+
 }
 
-nav .navbar .logo a {
+.navbar .navdiv .logo a {
+    font-family: 'Ubuntu';
     font-weight: 500;
     font-size: 35px;
     color: orange;
-    font-family: 'Ubuntu';
 }
 
-nav .navbar ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0px 20px;
-
-}
-
-nav .navbar ul li a {
-    text-decoration: none;
+.navbar a {
     color: black;
     font-weight: bold;
     font-size: 18px;
-    padding: 6px 0;
-    transition: all 0.4s ease;
 }
 
-nav ul li a:hover {
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.navbar a:hover {
     color: orange;
     transition: all 0.4s ease;
+
 }
 
-nav .navbar .menu {
-    display: flex;
-    position: relative;
-}
-
-nav .navbar .menu li {
-    list-style: none;
-    margin: 0 8px;
-}
-
-nav .navbar .menu a {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--black-color);
-    padding: 6px 0;
+.navbar .logo a:hover {
+    color: #555;
     transition: all 0.4s ease;
 }
 
+
+
 .home {
-    margin: auto;
     height: 100vh;
-    width: 100%;
-    background: url("images/portfolio-man.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    border: solid;
+    border-color: red;
+}
+
+.home .home-content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home h1 {
@@ -83,7 +79,7 @@ nav .navbar .menu a {
     margin-bottom: 20px;
 }
 
-span {
+.home span {
     color: orange;
 }
 
@@ -99,7 +95,6 @@ span {
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
-    transition: all 0.5s ease;
 }
 
 .media_icons a:hover {
@@ -119,16 +114,6 @@ span {
     position: absolute;
     left: 20%;
     bottom: 15%;
-}
-
-section {
-    padding-top: 40px;
-}
-
-section .content {
-    width: 80%;
-    margin: 40px auto;
-    font-family: 'Poppins', sans-serif;
 }
 
 section .title {
@@ -153,6 +138,9 @@ section .title span::after {
 
 .about {
     padding: 200px 0;
+    height: 100vh;
+    border: solid;
+    border-color: green;
 }
 
 .about .about-details {
