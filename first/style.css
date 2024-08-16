@@ -14,16 +14,13 @@
     position: fixed;
     width: 100%;
     padding: 0 50px;
-    border: solid;
+    z-index: 999;
 }
 
 .navdiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid;
-    border-color: red;
-
 }
 
 .navbar .navdiv .logo a {
@@ -48,20 +45,16 @@
 .navbar a:hover {
     color: orange;
     transition: all 0.4s ease;
-
 }
 
 .navbar .logo a:hover {
     color: #555;
     transition: all 0.4s ease;
+    text-decoration: underline;
 }
-
-
 
 .home {
     height: 100vh;
-    border: solid;
-    border-color: red;
 }
 
 .home .home-content {
@@ -86,6 +79,7 @@
 .home p {
     color: #555;
     line-height: 22px;
+    max-width: 500px;
 }
 
 .media_icons a {
@@ -116,66 +110,80 @@
     bottom: 15%;
 }
 
-section .title {
-    color: orange;
+.title {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 8px;
 }
 
-section .title span {}
-
-section .title span::after {
-    bottom: -7px;
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.about {
-    padding: 200px 0;
+.about-section {
     height: 100vh;
-    border: solid;
-    border-color: green;
+    background-color: #f4f4f4;
 }
 
-.about .about-details {
+.about-section .content {
+    padding: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-me {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-.about .about-details .left {
-    width: 45%;
+.about-header p {
+    padding-bottom: 12px;
 }
 
-.about .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 12px;
+
+.skills-experience h1 {
+    font-size: 3em;
+    color: #222222;
 }
 
-.about .about-details .right {
-    width: 55%;
+.description p {
+    font-size: 1.25em;
+    color: #6e6e6e;
+    padding-top: 15px;
 }
 
-section .topic {
-    color: var(--black-color);
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
+.about-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.about-details .right p {
-    text-align: justify;
-    color: var(--black-color);
+.about-details article {
+    margin-bottom: 30px;
 }
 
-section .button {
-    margin: 16px 0;
+.about-details h1 {
+    padding-bottom: 10px;
+    color: #222222;
+}
+
+.about-details p {
+    color: #6e6e6e;
+}
+
+.details-content {
+    flex: 1;
+}
+
+.working-image {
+    max-width: 400px;
+    margin-left: 100px;
+}
+
+.working-image img {
+    max-width: 100%;
+    height: auto;
 }
